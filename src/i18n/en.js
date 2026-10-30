@@ -10,7 +10,6 @@ export default {
     skills: 'Skills',
     projects: 'Projects',
     education: 'Education',
-    contact: 'Contact',
     mainMenu: 'Main navigation',
     openMenu: 'Open menu',
     closeMenu: 'Close menu',
@@ -46,7 +45,12 @@ export default {
     categories: {
       frontend: 'Frontend',
       backend: 'Backend',
-      databases: 'Databases',
+      databases: 'Database',
+      apis: 'APIs',
+      'version-control': 'Version Control',
+      tools: 'Tools',
+      deployment: 'Deployment',
+      security: 'Security',
     },
   },
   projects: {
@@ -70,21 +74,6 @@ export default {
         program: 'Full-Stack Web Development training',
       },
     ],
-  },
-  contact: {
-    title: 'Contact',
-    intro: "Have a project or an internship opportunity? I'd love to hear from you.",
-    name: 'Name',
-    email: 'Email',
-    message: 'Message',
-    send: 'Send',
-    errors: {
-      name: 'Please enter your name.',
-      email: 'Please enter a valid email address.',
-      message: 'Please write at least 10 characters.',
-    },
-    success: 'Thank you! Your email client is opening with your message prefilled.',
-    directLinks: 'Or reach me directly:',
   },
   footer: {
     built: 'Built with React',

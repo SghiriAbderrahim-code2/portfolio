@@ -26,7 +26,10 @@ export default function Skills() {
         <div className="skills-grid">
           {skillGroups.map((group, i) => (
             <motion.article key={group.id} className="skill-card card" {...rise(i * 0.08)}>
-              <h3 className="skill-card-title">{t.skills.categories[group.id]}</h3>
+              <h3 className="skill-card-title">
+                <group.Icon aria-hidden="true" />
+                {t.skills.categories[group.id]}
+              </h3>
               <ul className="chips">
                 {group.skills.map(({ name, Icon }) => (
                   <li key={name} className="chip">

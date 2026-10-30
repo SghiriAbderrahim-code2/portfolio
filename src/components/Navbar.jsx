@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext'
 import LanguageSwitcher from './LanguageSwitcher'
 import ThemeToggle from './ThemeToggle'
 
-const SECTIONS = ['home', 'about', 'skills', 'projects', 'education', 'contact']
+const SECTIONS = ['home', 'about', 'skills', 'projects', 'education']
 
 export default function Navbar() {
   const { t } = useLanguage()

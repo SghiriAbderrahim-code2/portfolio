@@ -10,7 +10,6 @@ export default {
     skills: 'Compétences',
     projects: 'Projets',
     education: 'Formation',
-    contact: 'Contact',
     mainMenu: 'Navigation principale',
     openMenu: 'Ouvrir le menu',
     closeMenu: 'Fermer le menu',
@@ -46,7 +45,12 @@ export default {
     categories: {
       frontend: 'Front-end',
       backend: 'Back-end',
-      databases: 'Bases de données',
+      databases: 'Base de données',
+      apis: 'APIs',
+      'version-control': 'Contrôle de version',
+      tools: 'Outils',
+      deployment: 'Déploiement',
+      security: 'Sécurité',
     },
   },
   projects: {
@@ -70,21 +74,6 @@ export default {
         program: 'Formation en développement web Full-Stack',
       },
     ],
-  },
-  contact: {
-    title: 'Contact',
-    intro: "Un projet ou une opportunité de stage ? N'hésitez pas à me contacter.",
-    name: 'Nom',
-    email: 'E-mail',
-    message: 'Message',
-    send: 'Envoyer',
-    errors: {
-      name: 'Veuillez saisir votre nom.',
-      email: 'Veuillez saisir une adresse e-mail valide.',
-      message: 'Veuillez écrire un message d’au moins 10 caractères.',
-    },
-    success: 'Merci ! Votre client e-mail s’ouvre avec le message prérempli.',
-    directLinks: 'Ou contactez-moi directement :',
   },
   footer: {
     built: 'Construit avec React',
