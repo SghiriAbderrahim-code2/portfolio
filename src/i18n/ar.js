@@ -32,7 +32,7 @@ export default {
   },
   about: {
     title: 'نبذة عني',
-    bio: 'أنا عبد الرحيم صغيري، مطوّر ويب Full-Stack وطالب في ISTA باب تيزيمي (OFPPT). أحب بناء تطبيقات الويب وحلّ المشكلات المعقّدة بالكود. أعمل على الواجهة الأمامية بـ React وNext.js، وعلى الخلفية بـ Node.js وPHP/Laravel، مع قواعد بيانات MySQL وMongoDB.',
+    bio: 'مطوّر ويب Full-Stack وطالب في ISTA باب تيزيمي (OFPPT). أبني تطبيقات ويب متكاملة بـ {React} و{Next.js} في الواجهة، و{Node.js} و{Laravel} في الخلفية، مع {MySQL} و{MongoDB} لقواعد البيانات.',
     facts: [
       { label: 'المسمّى الوظيفي', value: 'مطوّر ويب Full-Stack' },
       { label: 'التركيز', value: 'React · Next.js · Node.js · Laravel' },

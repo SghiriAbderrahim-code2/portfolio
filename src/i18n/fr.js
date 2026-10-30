@@ -32,8 +32,8 @@ export default {
     photoAlt: "Portrait d'Abderrahim Sghiri",
   },
   about: {
-    title: 'À propos',
-    bio: "Je m'appelle Abderrahim Sghiri, développeur web Full-Stack en formation à l'ISTA Bab Tizimi (OFPPT). Je suis passionné par la création d'applications web et la résolution de problèmes complexes par le code. Je travaille avec React et Next.js côté front, Node.js et PHP/Laravel côté back, avec des bases de données MySQL et MongoDB.",
+    title: 'À propos de moi',
+    bio: "Développeur Web Full-Stack et étudiant à l'ISTA Bab Tizimi (OFPPT). Je construis des applications web complètes avec {React} et {Next.js} côté front, {Node.js} et {Laravel} côté back, et {MySQL} et {MongoDB} pour les données.",
     facts: [
       { label: 'Poste', value: 'Développeur Web Full-Stack' },
       { label: 'Stack principale', value: 'React · Next.js · Node.js · Laravel' },

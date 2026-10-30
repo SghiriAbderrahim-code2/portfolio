@@ -1,5 +1,20 @@
 import { motion, useReducedMotion } from 'framer-motion'
+import { FiBriefcase, FiBookOpen, FiLayers } from 'react-icons/fi'
 import { useLanguage } from '../context/LanguageContext'
+
+const FACT_ICONS = [FiBriefcase, FiLayers, FiBookOpen]
+
+function renderBio(text) {
+  return text.split(/\{([^}]+)\}/).map((part, i) =>
+    i % 2 === 1 ? (
+      <span key={i} className="tech-hl">
+        {part}
+      </span>
+    ) : (
+      part
+    )
+  )
+}
 
 export default function About() {
   const { t } = useLanguage()
@@ -23,16 +38,24 @@ export default function About() {
 
         <div className="about-grid">
           <motion.p className="about-bio card" {...rise}>
-            {t.about.bio}
+            <span className="bio-text">{renderBio(t.about.bio)}</span>
           </motion.p>
 
           <motion.ul className="about-facts" {...rise}>
-            {t.about.facts.map((fact) => (
-              <li key={fact.label} className="fact-card card">
-                <span className="fact-label">{fact.label}</span>
-                <span className="fact-value">{fact.value}</span>
-              </li>
-            ))}
+            {t.about.facts.map((fact, i) => {
+              const Icon = FACT_ICONS[i]
+              return (
+                <li key={fact.label} className="fact-card card">
+                  <span className="fact-icon" aria-hidden="true">
+                    <Icon />
+                  </span>
+                  <span className="fact-body">
+                    <span className="fact-label">{fact.label}</span>
+                    <span className="fact-value">{fact.value}</span>
+                  </span>
+                </li>
+              )
+            })}
           </motion.ul>
         </div>
       </div>
